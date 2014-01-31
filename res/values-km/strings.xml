@@ -279,6 +279,7 @@
     <string name="copy_to_sdcard" msgid="757028609638184856">"រក្សា​ទុក​ឯកសារ​ភ្ជាប់"</string>
     <string name="copy_to_sdcard_success" msgid="7948625615155992014">"ឯកសារ​ភ្ជាប់​ដែល​បាន​រក្សា​ទុក​។"</string>
     <string name="copy_to_sdcard_fail" msgid="4944606369631916737">"មិន​អាច​រក្សា​ទុក​ឯកសារ​ភ្ជាប់​។"</string>
+    <string name="save_ringtone" msgid="2310157075045201051">"រក្សាទុក​ជា​សំឡេង​រោទ៍"</string>
     <string name="saved_ringtone" msgid="3847363932276708626">"បាន​រក្សាទុក​សំឡេង​រោទ៍។"</string>
     <string name="saved_ringtone_fail" msgid="4778500070919251116">"មិន​អាច​រក្សា​ទុក​សំឡេង​រោទ៍។"</string>
     <string name="menu_group_participants" msgid="4288356090262299071">"អ្នក​ចូលរួម​ក្នុង​ក្រុម"</string>
