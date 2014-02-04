@@ -44,4 +44,25 @@
   <string-array name="empty_subject_strings">
     <item msgid="7691141505407124426">"件名なし"</item>
   </string-array>
+
+  <string-array name="pref_mms_message_font_size_entries">
+    <item>10</item>
+    <item>12</item>
+    <item>14</item>
+    <item>16</item>
+    <item>18 (デフォルト)</item>
+    <item>20</item>
+    <item>22</item>
+  </string-array>
+
+  <string-array translatable="false" name="pref_mms_message_font_size_values">
+    <item>10</item>
+    <item>12</item>
+    <item>14</item>
+    <item>16</item>
+    <item>18</item>
+    <item>20</item>
+    <item>22</item>
+  </string-array>
+
 </resources>
