@@ -359,6 +359,10 @@
     <string name="pref_title_enable_softbank_encoding">SoftBank絵文字</string>
     <string name="pref_summary_enable_softbank_encoding">SoftBankの絵文字変換ルールを使用する</string>
 
+    <!-- Send on Enter -->
+    <string name="pref_title_mms_send_on_enter">Enterキーで送信</string>
+    <string name="pref_summary_mms_send_on_enter">Enterキーの押下でメッセージを送信するかどうか切り替える</string>
+
     <!-- Custom user-agent -->
     <string name="pref_mms_ua_default_android">Androidのデフォルト</string>
     <string name="pref_mms_ua_nokia_n95">Nokia N95</string>
