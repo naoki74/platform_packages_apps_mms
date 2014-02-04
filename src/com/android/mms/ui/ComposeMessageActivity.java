@@ -4422,11 +4422,19 @@ public class ComposeMessageActivity extends Activity
                     } else {
                         emoji = EmojiParser.getInstance().addEmojiSpans(EmojiParser.mEmojiTexts[position]);
                     }
+                    EditText mToInsert;
+
+                    // tag edit text to insert to
                     if (mSubjectTextEditor != null && mSubjectTextEditor.hasFocus()) {
-                        mSubjectTextEditor.append(emoji);
+                        mToInsert = mSubjectTextEditor;
                     } else {
-                        mTextEditor.append(emoji);
+                        mToInsert = mTextEditor;
                     }
+                    // insert the emoji at the cursor location or replace selected
+                    int start = mToInsert.getSelectionStart();
+                    int end = mToInsert.getSelectionEnd();
+                    mToInsert.getText().replace(Math.min(start, end), Math.max(start, end), emoji);
+
                     mEmojiDialog.dismiss();
                     return true;
                 }
@@ -4435,11 +4443,20 @@ public class ComposeMessageActivity extends Activity
             button.setOnClickListener(new android.view.View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+                   EditText mToInsert;
+
+                    // tag edit text to insert to
                     if (mSubjectTextEditor != null && mSubjectTextEditor.hasFocus()) {
-                        mSubjectTextEditor.append(editText.getText());
+                        mToInsert = mSubjectTextEditor;
                     } else {
-                        mTextEditor.append(editText.getText());
+                        mToInsert = mTextEditor;
                     }
+                    // insert the emoji at the cursor location or replace selected
+                    int start = mToInsert.getSelectionStart();
+                    int end = mToInsert.getSelectionEnd();
+                    mToInsert.getText().replace(Math.min(start, end), Math.max(start, end),
+                            editText.getText());
+
                     mEmojiDialog.dismiss();
                 }
             });
